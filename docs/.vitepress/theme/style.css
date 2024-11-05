@@ -304,3 +304,30 @@ body.home .VPNav {
 body.home .hide-nav {
   --vp-nav-height: 0px !important;
 }
+/* Prevent double horizontal lines when <hr> is followed by a heading */
+hr + h2, hr + h3, hr + h4 {
+  display: none;
+  border-top: none !important; /* Ensures any top border is removed */
+
+}
+
+.content h2:first-of-type {
+  border-top: none !important; /* Removes any top border */
+  margin-top: 0 !important;    /* Removes any extra margin above the header */
+  padding-top: 0 !important;   /* Removes any extra padding above the header */
+}
+
+
+/* Styling for code blocks */
+pre {
+  background-color: rgba(0, 0, 0, 0.05); /* Light black with 5% opacity */
+  padding: 8px; /* Add some padding inside the code block */
+  border-radius: 4px; /* Rounded corners */
+  overflow: auto; /* Adds scrolling for long code blocks */
+}
+
+pre code {
+  background: none; /* Remove any background from code inside pre */
+  padding: 0; /* Remove padding if code has default padding */
+}
+

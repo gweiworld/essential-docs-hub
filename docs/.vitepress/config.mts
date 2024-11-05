@@ -23,9 +23,9 @@ export default defineConfig({
       
       // --- Introduction Section ---
       {
-        text: 'Introduction',          // Sidebar heading for Introduction
+        text: 'Welcome to Essential',          // Sidebar heading for Introduction
+        link: '/welcome/',
         items: [
-          { text: 'Welcome to Essential', link: '/welcome' },    // Link to Welcome page
           { text: 'Why Essential?', link: '/why-essential' },    // Link to Why Essential page
         ]
       },
@@ -33,33 +33,30 @@ export default defineConfig({
       // --- Learn Section ---
       {
         text: 'Learn',                 // Sidebar heading for learning resources
+        collapsed: true, 
         items: [
           
           // Topic: Declarative vs Imperative Programming
           { 
             text: 'Declarative vs Imperative', 
+            link: '/learn/declarative-vs-imperative/',
             collapsed: false,           // Start as collapsed
             items: [
-              { text: 'Concepts', link: '/declarative-vs-imperative/concepts' },   // Core concepts overview
-              { text: 'Programming', link: '/declarative-vs-imperative/programming' },   // Programming types intro
+              { text: 'Programming', link: '/learn/declarative-vs-imperative/programming' },   // Programming types intro
               
               // Subtopic: Imperative Pitfalls
               { text: 'Imperative Pitfalls', 
                 collapsed: true,
                 items: [
-                  { text: 'Sub-optimal Outcomes', link: '/declarative-vs-imperative/sub-optimal-outcomes' },
-                  { text: 'Execution Bottleneck', link: '/declarative-vs-imperative/execution-bottleneck' },
+                  { text: 'Sub-optimal Outcomes', link: '/learn/declarative-vs-imperative/imperative-pitfalls/sub-optimal-outcomes' },
+                  { text: 'Execution Bottleneck', link: '/learn/declarative-vs-imperative/imperative-pitfalls/execution-bottleneck' },
                 ]
               },
               
               // Subtopic: Declarative Approach
-              { text: 'Declarative Approach', 
+              { text: 'Early Declarative Applications: "Intents"', 
                 collapsed: true,
-                items: [
-                  { text: 'Early Stages', link: '/declarative-vs-imperative/early-stages' },
-                  { text: 'Intent Narrative', link: '/declarative-vs-imperative/intent-narrative' },
-                  { text: 'Fully Declarative', link: '/declarative-vs-imperative/fully-declarative' },
-                ]
+                link: '/learn/declarative-vs-imperative/early-declarative-applications'
               },
             ]          
           },
@@ -69,9 +66,15 @@ export default defineConfig({
             text: 'A Declarative Blockchain',
             collapsed: false,           // Start as collapsed
             items: [
-              { text: 'Overview', link: '/declarative-blockchain/overview' },      // Overview of declarative blockchain
-              { text: 'Advantages', link: '/declarative-blockchain/advantages' },  // Advantages section
-              { text: 'Landscape', link: '/declarative-blockchain/landscape' },    // Blockchain landscape overview
+              { text: 'What is a Declarative Blockchain?', 
+                link: '/learn/declarative-blockchain/overview', 
+                items: [
+                  { text: 'Criterion 1', link: '/learn/declarative-blockchain/criterion-1' },  // Introduction to declarative blockchain
+                  { text: 'Criterion 2', link: '/learn/declarative-blockchain/criterion-2' },      // Key features of declarative blockchain
+                ]
+              },      // Overview of declarative blockchain
+              { text: 'Advantages', link: '/learn/declarative-blockchain/advantages' },  // Advantages section
+              { text: 'Landscape', link: '/learn/declarative-blockchain/landscape' },    // Blockchain landscape overview
             ]
           },
         ]
@@ -80,31 +83,32 @@ export default defineConfig({
       // --- Build Section ---
       {
         text: 'Build',                 // Sidebar heading for building resources
+        collapsed: true, 
         items: [
           
           // Topic: Getting Started Guide
           { 
             text: 'Getting Started', 
-            link: '/getting-started/', 
+            link: '/build/getting-started/', 
             items: [
               
               // Subsection: Installation Methods
               { 
                 text: 'Installation',    // Installation guide
                 collapsed: true,
-                link: '/getting-started/installation/', 
+                link: '/build/getting-started/installation/', 
                 items: [
-                  { text: 'Nix', link: '/getting-started/installation/nix' },    // Nix installation guide
-                  { text: 'Crates IO', link: '/getting-started/installation/crates-io' },   // Crates IO installation
+                  { text: 'Nix', link: '/build/getting-started/installation/nix' },    // Nix installation guide
+                  { text: 'Crates IO', link: '/build/getting-started/installation/crates-io' },   // Crates IO installation
                 ]
               }, 
-              { text: 'Components', link: '/getting-started/components' },   // Configuration and components setup
+              { text: 'Components', link: '/build/getting-started/components' },   // Configuration and components setup
               
               // Subsection: Example Projects
               { 
                 text: 'Example', 
                 collapsed: true,
-                link: '/getting-started/example/', 
+                link: '/build/getting-started/example/', 
                 items: [
                   
                   // Example Project: Pint
@@ -112,11 +116,11 @@ export default defineConfig({
                     text: 'Pint Project',
                     collapsed: true,
                     items: [
-                      { text: 'New Project', link: '/getting-started/example/new-project' },  // Setting up a new Pint project
-                      { text: 'Define Storage', link: '/getting-started/example/define-storage' },  // Define storage features
-                      { text: 'Write Predicate', link: '/getting-started/example/write-predicate' },  // Write predicate
-                      { text: 'Add Constraint', link: '/getting-started/example/write-constraint' },  // Add constraints
-                      { text: 'Compile', link: '/getting-started/example/compile' },  // Compile the project
+                      { text: 'New Project', link: '/build/getting-started/example/pint/new-project' },  // Setting up a new Pint project
+                      { text: 'Define Storage', link: '/build/getting-started/example/pint/define-storage' },  // Define storage features
+                      { text: 'Write Predicate', link: '/build/getting-started/example/pint/write-predicate' },  // Write predicate
+                      { text: 'Add Constraint', link: '/build/getting-started/example/pint/add-constraint' },  // Add constraints
+                      { text: 'Compile', link: '/build/getting-started/example/pint/compile' },  // Compile the project
                     ] 
                   },  
                   
@@ -125,19 +129,19 @@ export default defineConfig({
                     text: 'Cargo Project',
                     collapsed: true,
                     items: [
-                      { text: 'Setup Project', link: '/getting-started/example/new-project' },    // Rust project setup
+                      { text: 'Setup Project', link: '/build/getting-started/example/cargo/setup' },    // Rust project setup
                       
                       // Development Process
                       { 
                         text: 'Develop', 
                         collapsed: true,
                         items: [
-                          { text: 'Dependencies', link: '/getting-started/example/dependencies' },   // Dependency setup
-                          { text: 'Keys', link: '/getting-started/example/keys' },                   // Key management
-                          { text: 'Extract Count', link: '/getting-started/example/extract-count' }, // Data extraction
-                          { text: 'Create Solution', link: '/getting-started/example/create-solution' }, // Create solutions
-                          { text: 'Increment', link: '/getting-started/example/increment' },          // Increment function
-                          { text: 'Review', link: '/getting-started/example/review' },                // Review code
+                          { text: 'Dependencies', link: '/build/getting-started/example/cargo/dependencies' },   // Dependency setup
+                          { text: 'Keys', link: '/build/getting-started/example/cargo/keys' },                   // Key management
+                          { text: 'Extract Count', link: '/build/getting-started/example/cargo/extract-count' }, // Data extraction
+                          { text: 'Create Solution', link: '/build/getting-started/example/cargo/create-solution' }, // Create solutions
+                          { text: 'Increment', link: '/build/getting-started/example/cargo/increment' },          // Increment function
+                          { text: 'Review', link: '/build/getting-started/example/cargo/review' },                // Review code
                         ]
                       },
                       
@@ -146,13 +150,13 @@ export default defineConfig({
                         text: 'Test',
                         collapsed: true, 
                         items: [
-                          { text: 'Generate Address', link: '/getting-started/example/generate-address' }, // Address generation
-                          { text: 'Deploy Contract', link: '/getting-started/example/deploy-contract' },   // Contract deployment
-                          { text: 'Read Count', link: '/getting-started/example/read-count' },             // Reading data
-                          { text: 'Increment Count', link: '/getting-started/example/increment-count' },   // Data increment
-                          { text: 'Build Block', link: '/getting-started/example/build-block' },           // Block creation
-                          { text: 'Competing Solutions', link: '/getting-started/example/competing-solutions' }, // Solution competition
-                          { text: 'Review', link: '/getting-started/example/review' },                    // Code review
+                          { text: 'Generate Address', link: '/build/getting-started/example/cargo/test/generate-address' }, // Address generation
+                          { text: 'Deploy Contract', link: '/build/getting-started/example/cargo/test/deploy-contract' },   // Contract deployment
+                          { text: 'Read Count', link: '/build/getting-started/example/cargo/test/read-count' },             // Reading data
+                          { text: 'Increment Count', link: '/build/getting-started/example/cargo/test/increment' },   // Data increment
+                          { text: 'Build Block', link: '/build/getting-started/example/cargo/test/build-block' },           // Block creation
+                          { text: 'Competing Solutions', link: '/build/getting-started/example/cargo/test/solutions' }, // Solution competition
+                          { text: 'Review', link: '/build/getting-started/example/cargo/test/review' },                    // Code review
                         ]
                       },  
                     ] 
@@ -161,17 +165,17 @@ export default defineConfig({
                     text: 'Rust CLI',
                     collapsed: true,
                     items: [
-                      { text: 'Dependencies', link: '/getting-started/example/dependencies' },   // Dependency setup
-                      { text: 'Generate Address', link: '/getting-started/example/keys' },                   // Key management
-                      { text: 'Args', link: '/getting-started/example/extract-count' }, // Data extraction
-                      { text: 'Query Count', link: '/getting-started/example/create-solution' }, // Create solutions
-                      { text: 'Run', link: '/getting-started/example/increment' },          // Increment function
-                      { text: 'Review', link: '/getting-started/example/review' },                // Review code
+                      { text: 'Dependencies', link: '/build/getting-started/example/rust-cli/dependencies' },   // Dependency setup
+                      { text: 'Generate Address', link: '/build/getting-started/example/rust-cli/generate-address' },                   // Key management
+                      { text: 'Args', link: '/build/getting-started/example/rust-cli/args' }, // Data extraction
+                      { text: 'Query Count', link: '/build/getting-started/example/rust-cli/query-count' }, // Create solutions
+                      { text: 'Run', link: '/build/getting-started/example/rust-cli/run' },          // Increment function
+                      { text: 'Review', link: '/build/getting-started/example/rust-cli/review' },                // Review code
                     ]
                   },
                   {
                     text: 'Interact with Testnet',
-                    link: '/getting-started/example/interact-with-testnet'
+                    link: '/build/getting-started/example/interact-testnet'
                   }
                 ]
               },
@@ -189,7 +193,7 @@ export default defineConfig({
           
           // Subtopic: Contracts in Pint
           { text: 'Contracts', 
-            link: '/pint/overview', 
+            link: '/pint/contracts/', 
             items: [
               { text: 'Predicates', link: '/pint/contracts/predicates' },
               { text: 'Constraints', link: '/pint/contracts/constraints' },
@@ -197,7 +201,28 @@ export default defineConfig({
               { text: 'Solutions', link: '/pint/contracts/solutions' },
             ]
           },
-          { text: 'Applications', link: '/pint/applications' },   // Overview of Pint applications
+          {
+            text: 'Storage',
+            link: '/pint/storage',
+            items: [
+              { text: 'Statically-Sized Storage', link: '/pint/storage/static' },
+              { text: 'Dynamically-sized Storage', link: '/pint/storage/dynamic' },
+              { text: 'External Storage', link: '/pint/storage/external' },
+            ]
+          },
+          { 
+            text: 'Applications', 
+            link: '/pint/applications', 
+            items: [
+              { text: 'Examples', 
+                collapsed: true,
+                items: [
+                  { text: 'Counter', link: '/pint/applications/examples/counter' },
+                  { text: 'Subcurrency', link: '/pint/applications/examples/subcurrency' },
+                ]
+              },
+            ]
+          },   // Overview of Pint applications
         ]
       },
       
