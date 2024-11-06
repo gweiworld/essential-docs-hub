@@ -11,9 +11,10 @@ While the term has evolved, the core principle of intents is that they allow use
 <script setup>
 import Tweet from "vue-tweet";
 </script>
-<div style="display: flex; border: 1px solid #ddd; border-radius: 12px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); overflow: hidden; max-width: 500px; margin-left: auto; margin-right: auto; padding: 0; background-color: #fff;">
 
-   <div style="width: 100%; margin: 0; padding: 0; line-height: 0; background-color: #fff;">
+<div style="display: flex;  solid #ddd; border-radius: 12px;  overflow: hidden; max-width: 500px; margin-left: auto; margin-right: auto; padding: 0; background-color: #fff;">
+
+   <div style="width: 100%; margin-left: 10px; margin-right: 10px; padding: 0; line-height: 0; background-color: #fff;">
        <Tweet tweet-url="https://x.com/CannnGurel/status/1663292583550803969" />
    </div>
 

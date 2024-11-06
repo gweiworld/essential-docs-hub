@@ -24,7 +24,7 @@ export default defineConfig({
       // --- Introduction Section ---
       {
         text: 'Welcome to Essential',          // Sidebar heading for Introduction
-        link: '/welcome',
+        link: '/',
       },
       // --- Learn Section ---
       {

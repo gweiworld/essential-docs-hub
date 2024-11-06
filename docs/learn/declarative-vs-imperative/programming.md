@@ -6,7 +6,10 @@ Programming can broadly be categorized into two paradigms: **imperative** and **
   
 - **Declarative programming** describes _what_ a program should accomplish, rather than how to achieve it. A declarative program specifies the expected result and core logic, without needing to direct the program's control flow.
 
-<img src="/images/imperative-vs-declarative.png" alt="Imperative vs Declarative">
+<div style="margin-bottom: 15px;">
+    <img src="/images/imperative-vs-declarative.png" alt="Imperative vs Declarative">
+</div>
+
 
 ## In the Context of Blockchain Architectures
 

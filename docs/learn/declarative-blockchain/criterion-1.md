@@ -1,10 +1,11 @@
 # Criterion 1: Constraints on State
 
 Early intent projects output transactions that are settled via imperative execution, treating **intents as constraints on state transitions**. In declarative blockchains like Essential, however, intents are not constraints on the state transition function but rather **constraints on state itself**.
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
 <div style="border-left: 4px solid #017acd; padding: 10px; border-radius: 4px; margin: 10px 0;">
-    <strong>ℹ️</strong> Leveraging constraints on state is essential for declarative blockchains, as it allows developers and users to narrow down the solution space to acceptable and optimal outcomes.
-
+<i class="fas fa-info-circle"/>
+Leveraging constraints on state is essential for declarative blockchains, as it allows developers and users to narrow down the solution space to acceptable and optimal outcomes.
 </div>
 
 ## Constraint Programming

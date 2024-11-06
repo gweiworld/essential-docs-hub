@@ -773,6 +773,11 @@ focus-trap@^7.6.0:
   dependencies:
     tabbable "^6.2.0"
 
+font-awesome@^4.7.0:
+  version "4.7.0"
+  resolved "https://registry.yarnpkg.com/font-awesome/-/font-awesome-4.7.0.tgz#8fa8cf0411a1a31afd07b06d2902bb9fc815a133"
+  integrity sha512-U6kGnykA/6bFmg1M/oT9EkFeIYv7JlX3bozwQJWiiLz6L0w3F5vBVPxHlwyX/vtNq1ckcpRKOB9f2Qal/VtFpg==
+
 fsevents@~2.3.2, fsevents@~2.3.3:
   version "2.3.3"
   resolved "https://registry.npmjs.org/fsevents/-/fsevents-2.3.3.tgz"
@@ -921,11 +926,6 @@ preact@^10.0.0:
   version "10.24.3"
   resolved "https://registry.npmjs.org/preact/-/preact-10.24.3.tgz"
   integrity sha512-Z2dPnBnMUfyQfSQ+GBdsGa16hz35YmLmtTLhM169uW944hYL6xzTYkJjC07j+Wosz733pMWx0fgON3JNw1jJQA==
-
-prismjs@^1.29.0:
-  version "1.29.0"
-  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.29.0.tgz#f113555a8fa9b57c35e637bba27509dcf802dd12"
-  integrity sha512-Kx/1w86q/epKcmte75LNrEoT+lX8pBpavuAbvJWRXar7Hz8jrtF+e3vY751p0R8H9HdArwaCTNDDzHg/ScJK1Q==
 
 property-information@^6.0.0:
   version "6.5.0"
@@ -1116,7 +1116,7 @@ vue-demi@>=0.14.10:
 
 vue-tweet@^2.3.1:
   version "2.3.1"
-  resolved "https://registry.yarnpkg.com/vue-tweet/-/vue-tweet-2.3.1.tgz#50867ce62bb016f62e4d0a695c347f44c6a0845c"
+  resolved "https://registry.npmjs.org/vue-tweet/-/vue-tweet-2.3.1.tgz"
   integrity sha512-n8dKawDjEkNk4pkoiETGjB9s0OIT51i37zcgkrf2JnVx0NLGvLYesedVz3UHG7krAPGjGQ7pm1QZkTJC2oGs6w==
 
 vue@^3.5.12:
