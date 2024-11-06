@@ -24,12 +24,8 @@ export default defineConfig({
       // --- Introduction Section ---
       {
         text: 'Welcome to Essential',          // Sidebar heading for Introduction
-        link: '/welcome/',
-        items: [
-          { text: 'Why Essential?', link: '/why-essential' },    // Link to Why Essential page
-        ]
+        link: '/welcome',
       },
-      
       // --- Learn Section ---
       {
         text: 'Learn',                 // Sidebar heading for learning resources
@@ -183,7 +179,24 @@ export default defineConfig({
           },
         ]
       },
-      
+      // --- Protocol Section ---
+      {
+        text: 'Protocol',               // Sidebar heading for protocol documentation
+        collapsed: true,                // Collapsed by default
+        items: [
+          { text: 'Overview', link: '/protocol/overview' },     // General protocol overview
+          { text: 'Core Components', link: '/protocol/core-components' },  // Details on core components
+          { text: 'Contracts', link: '/protocol/contracts/', 
+            items: [
+              { text: 'Predicates', link: '/protocol/contracts/predicates' },
+              { text: 'Constraints', link: '/protocol/contracts/constraints' }
+            ]
+          },
+          { text: 'User Data', link: '/protocol/user-data' },
+          { text: 'Solutions', link: '/protocol/solutions' },
+          { text: 'Applications', link: '/protocol/applications' },
+        ]
+      },
       // --- Pint Section ---
       {
         text: 'Pint',
@@ -192,17 +205,40 @@ export default defineConfig({
         items: [
           
           // Subtopic: Contracts in Pint
+          {
+            text: 'Quickstart Guide',
+            link: '/pint/quickstart',
+          },
           { text: 'Contracts', 
             link: '/pint/contracts/', 
             items: [
               { text: 'Predicates', link: '/pint/contracts/predicates' },
               { text: 'Constraints', link: '/pint/contracts/constraints' },
-              { text: 'User Data', link: '/pint/contracts/user-data' },
-              { text: 'Solutions', link: '/pint/contracts/solutions' },
+            ]
+          },
+          {
+            text: 'Programming Concepts',
+            link: '/pint/programming-concepts',
+            collapsed: true,                // Collapsed by default
+            items: [
+              { text: 'Variables', link: '/pint/programming-concepts/variables' },
+              { text: 'Data Types', link: '/pint/programming-concepts/data-types' },
+              { text: 'Comments', link: '/pint/programming-concepts/comments' },
+              { text: 'Conditionals', link: '/pint/programming-concepts/conditionals' },
+              { text: 'Custom Types', link: '/pint/programming-concepts/custom/', 
+                items: [
+                  { text: 'Type Aliases', link: '/pint/programming-concepts/custom/type-aliases' },
+                  { text: 'Unions', link: '/pint/programming-concepts/custom/union' },
+                  { text: 'match Construct', link: '/pint/programming-concepts/custom/match-construct' },
+                ]
+              },
+              { text: 'Constraints', link: '/pint/programming-concepts/constraints' },
+              { text: 'Constants', link: '/pint/programming-concepts/constants' },
             ]
           },
           {
             text: 'Storage',
+            collapsed: true,                // Collapsed by default
             link: '/pint/storage',
             items: [
               { text: 'Statically-Sized Storage', link: '/pint/storage/static' },
@@ -210,31 +246,36 @@ export default defineConfig({
               { text: 'External Storage', link: '/pint/storage/external' },
             ]
           },
-          { 
-            text: 'Applications', 
-            link: '/pint/applications', 
+          {
+            text: 'Advanced Features',
+            collapsed: true,                // Collapsed by default
             items: [
-              { text: 'Examples', 
-                collapsed: true,
-                items: [
-                  { text: 'Counter', link: '/pint/applications/examples/counter' },
-                  { text: 'Subcurrency', link: '/pint/applications/examples/subcurrency' },
-                ]
-              },
+              { text: 'Invoking Predicates', link: '/pint/advanced-features/invoking-predicates' },
+              { text: 'Macros', link: '/pint/advanced-features/macros' },
             ]
-          },   // Overview of Pint applications
+          },
+          { 
+            text: 'Examples', 
+            collapsed: true,
+            items: [
+              { text: 'Counter', link: '/pint/examples/counter' },
+              { text: 'Subcurrency', link: '/pint/examples/subcurrency' },
+              
+            ]
+          },
+          {
+            text: 'Reference',
+            link: '/pint/reference',
+            collapsed: true,                // Collapsed by default
+            items: [
+              { text: 'Commands', link: '/pint/reference/commands' },
+              { text: 'Manifest', link: '/pint/reference/manifest' },
+            ]
+
+          }
         ]
       },
-      
-      // --- Protocol Section ---
-      {
-        text: 'Protocol',               // Sidebar heading for protocol documentation
-        collapsed: true,                // Collapsed by default
-        items: [
-          { text: 'Overview', link: '/protocol/overview' },     // General protocol overview
-          { text: 'Core Components', link: '/protocol/core-components' },  // Details on core components
-        ]
-      }
+  
     ],
     
     // --- Footer Social Links ---

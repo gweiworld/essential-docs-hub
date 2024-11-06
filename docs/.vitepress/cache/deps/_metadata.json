@@ -1,37 +1,64 @@
 {
-  "hash": "f4d2fea7",
+  "hash": "2cf01be1",
   "configHash": "6785ff5d",
-  "lockfileHash": "391fb802",
-  "browserHash": "55532119",
+  "lockfileHash": "270dfc21",
+  "browserHash": "0e2abefd",
   "optimized": {
     "vue": {
       "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "2ed7ff4e",
+      "fileHash": "50bb77ef",
       "needsInterop": false
     },
     "vitepress > @vue/devtools-api": {
       "src": "../../../../node_modules/@vue/devtools-api/dist/index.js",
       "file": "vitepress___@vue_devtools-api.js",
-      "fileHash": "87049739",
+      "fileHash": "74728f7d",
       "needsInterop": false
     },
     "vitepress > @vueuse/core": {
       "src": "../../../../node_modules/@vueuse/core/index.mjs",
       "file": "vitepress___@vueuse_core.js",
-      "fileHash": "ec732b31",
+      "fileHash": "9a9a244f",
       "needsInterop": false
+    },
+    "prismjs": {
+      "src": "../../../../node_modules/prismjs/prism.js",
+      "file": "prismjs.js",
+      "fileHash": "1a3cc55c",
+      "needsInterop": true
+    },
+    "prismjs/components/prism-bash": {
+      "src": "../../../../node_modules/prismjs/components/prism-bash.js",
+      "file": "prismjs_components_prism-bash.js",
+      "fileHash": "bda25293",
+      "needsInterop": true
+    },
+    "prismjs/components/prism-javascript": {
+      "src": "../../../../node_modules/prismjs/components/prism-javascript.js",
+      "file": "prismjs_components_prism-javascript.js",
+      "fileHash": "81b8104a",
+      "needsInterop": true
+    },
+    "prismjs/components/prism-typescript": {
+      "src": "../../../../node_modules/prismjs/components/prism-typescript.js",
+      "file": "prismjs_components_prism-typescript.js",
+      "fileHash": "ee178854",
+      "needsInterop": true
     },
     "vue-tweet": {
       "src": "../../../../node_modules/vue-tweet/dist/vue-tweet.js",
       "file": "vue-tweet.js",
-      "fileHash": "993ec1f8",
+      "fileHash": "27f7a948",
       "needsInterop": false
     }
   },
   "chunks": {
     "chunk-L2JNJ22P": {
       "file": "chunk-L2JNJ22P.js"
+    },
+    "chunk-BUSYA2B4": {
+      "file": "chunk-BUSYA2B4.js"
     }
   }
 }

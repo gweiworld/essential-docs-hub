@@ -8,6 +8,5 @@ title: "Essential Documentation"
   <p class="hero-tagline">The First Declarative Blockchain</p>
   <div class="hero-buttons">
     <a href="/build/getting-started" class="hero-button primary">Start Building</a>
-    <a href="/docs" class="hero-button secondary">Read Docs</a>
   </div>
 </div>

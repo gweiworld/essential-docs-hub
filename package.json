@@ -14,6 +14,7 @@
     "docs:preview": "vitepress preview docs"
   },
   "dependencies": {
+    "prismjs": "^1.29.0",
     "vue-tweet": "^2.3.1"
   }
 }

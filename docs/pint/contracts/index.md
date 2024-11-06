@@ -1,11 +1,16 @@
-# Contracts
+# Smart Contracts
 
-In Essential, state belongs to **contracts** that declare it, similar to other blockchains. However, unlike traditional imperative blockchain languages (e.g., Solidity), Essential uses a **declarative approach**. 
+**Pint** is a language for writing "smart contracts." If you are familiar with smart contract languages like Solidity, many elements of a Pint contract will feel familiar. However, at its core, Pint is fundamentally different from imperative smart contract languages. Writing smart contracts in Pint requires a different mindset for expressing the rules that the contract must enforce.
 
-**Imperative Smart Contracts** typically:
-- Take inputs and execute a sequence of operations.
-- Update state as a side-effect of these operations.
+A **Pint contract** is a collection of **predicates**. Each predicate has:
+- A **name**
+- A **list of typed parameters**
+- A **list of constraints**
 
-In contrast, Essential’s declarative contracts achieve **state updates without execution**. Instead of executing steps, Essential starts with a proposed **atomic state mutation** (a set of new state values). It then substitutes these values into a contract to check their **validity**. This approach reverses the typical order seen in imperative contracts.
+Predicates in a smart contract define the various ways state can be mutated to accomplish specific tasks (e.g., a token transfer). 
+
+A contract may also contain a **storage declaration** that lists all storage variables owned by the contract. This **contract storage** serves as the contract’s database, where persistent state is maintained.
 
 <ExternalContent url="https://essential-contributions.github.io/pint/book/smart_contracts/index.html" selector="main" subSelector="h3#contract-structure" />
+<ExternalContent url="https://essential-contributions.github.io/pint/book/smart_contracts/index.html" selector="main" subSelector="h3#contract-interfaces" />
+

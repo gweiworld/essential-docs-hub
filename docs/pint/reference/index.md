@@ -1,1 +1,1 @@
-<ExternalContent url="https://essential-contributions.github.io/pint/book/pint-reference/index.html" selector="main" >
+<ExternalContent url="https://essential-contributions.github.io/pint/book/pint-reference/index.html" selector="main" />
