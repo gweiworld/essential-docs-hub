@@ -5,11 +5,12 @@ import { defineConfig } from 'vitepress'
 // Vitepress Site Configuration
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  
-  // --- Basic Site Information ---
+
+// --- Basic Site Information ---
   title: "Essential Docs",           // Site title displayed in the browser tab
   description: "Essential Documentation",  // Site meta description for search engines
-  
+  base: '/essential-docs-hub/',      // **Add this line**: Base URL for GitHub Pages
+
   // --- Theme and Navigation Settings ---
   themeConfig: {
     
