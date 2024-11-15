@@ -12,10 +12,13 @@
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview docs"
+    "docs:preview": "vitepress preview docs",
+    "deploy": "vitepress build docs && gh-pages -d docs/.vitepress/dist"
+
   },
   "dependencies": {
     "font-awesome": "^4.7.0",
+    "gh-pages": "^6.2.0",
     "vue-tweet": "^2.3.1"
   }
 }
