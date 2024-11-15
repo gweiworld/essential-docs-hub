@@ -10,7 +10,7 @@
       "forceConsistentCasingInFileNames": true,
       "baseUrl": ".",
       "paths": {
-        "@/*": ["./docs/.vitepress/*"]
+        "@/*": ["docs/.vitepress/*"]
       }
     },
     "include": ["docs/.vitepress/**/*", "docs/**/*.md"],

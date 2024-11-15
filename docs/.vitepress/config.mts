@@ -4,6 +4,7 @@ import { defineConfig } from 'vitepress'
 
 // Vitepress Site Configuration
 // https://vitepress.dev/reference/site-config
+
 export default defineConfig({
 
 // --- Basic Site Information ---
