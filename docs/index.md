@@ -7,6 +7,6 @@ title: "Essential Documentation"
   <img src="/images/logo.png" alt="Essential Logo" class="hero-logo">
   <p class="hero-tagline">The First Declarative Blockchain</p>
   <div class="hero-buttons">
-    <a href="/build/getting-started" class="hero-button primary">Start Building</a>
+    <a href="/docs/build/getting-started" class="hero-button primary">Start Building</a>
   </div>
 </div>
