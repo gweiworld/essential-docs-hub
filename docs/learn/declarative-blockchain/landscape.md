@@ -1,3 +1,8 @@
+---
+next: 
+  text: 'Build: Getting Started'
+  link: '/build/getting-started/'
+---
 # The Declarative Landscape
 
 <div style= padding:10px;>

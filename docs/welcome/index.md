@@ -1,3 +1,8 @@
+---
+next: 
+  text: 'Learn: Declarative vs Imperative'
+  link: '/learn/declarative-vs-imperative/'
+---
 # Welcome to Essential
 
 <h4 class="welcome-subtitle">Essential is the first declarative blockchain, advancing the shift from value extraction to intent satisfaction.</h4>

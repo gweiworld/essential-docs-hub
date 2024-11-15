@@ -24,8 +24,10 @@ export default defineConfig({
       
       // --- Introduction Section ---
       {
-        text: 'Welcome to Essential',          // Sidebar heading for Introduction
-        link: '/welcome',
+        text: 'Overview',          // Sidebar heading for Introduction
+        items: [
+          { text: 'Welcome to Essential', link: '/welcome',}
+        ]
       },
       // --- Learn Section ---
       {
@@ -110,7 +112,7 @@ export default defineConfig({
                   
                   // Example Project: Pint
                   { 
-                    text: 'Pint Project',
+                    text: 'Pint',
                     collapsed: true,
                     items: [
                       { text: 'New Project', link: '/build/getting-started/example/pint/new-project' },  // Setting up a new Pint project
@@ -126,7 +128,7 @@ export default defineConfig({
                     text: 'Cargo Project',
                     collapsed: true,
                     items: [
-                      { text: 'Setup Project', link: '/build/getting-started/example/cargo/setup' },    // Rust project setup
+                      { text: 'Setup', link: '/build/getting-started/example/cargo/setup' },    // Rust project setup
                       
                       // Development Process
                       { 
@@ -281,7 +283,11 @@ export default defineConfig({
     
     // --- Footer Social Links ---
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/vuejs/vitepress' }   // GitHub repository link
+      { icon: 'github', link: 'https://github.com/essential-contributions' },   // GitHub repository link
+      { icon: 'x', link: 'https://x.com/intentessential' },   // X account link
+      { icon: 'discord', link: 'https://discord.gg/essential-builders' },   // Discord server link
+      { icon: 'linkedin', link: 'https://www.linkedin.com/company/essentialbuilders' },   // LinkedIn page link
+      { icon: 'files', link: 'https://blog.essential.builders' },   // Blog link
     ]
   }
 })

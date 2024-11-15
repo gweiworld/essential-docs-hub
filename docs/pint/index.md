@@ -1,3 +1,9 @@
+---
+next: 
+  text: 'Quickstart Guide'
+  link: '/pint/quickstart'
+---
+
 # Pint
 
 **Pint** is a **declarative programming language** designed for building blockchain applications. Unlike imperative languages (e.g., Solidity), where you must specify each step of execution, **declarative programming** in Pint focuses on describing the logic and goals of the program rather than its explicit steps. In other words, with Pint, you describe **what the program should accomplish** rather than **how to accomplish it**.
